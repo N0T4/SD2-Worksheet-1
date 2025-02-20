@@ -1,14 +1,28 @@
 package griffith;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-class GradesTest {
+public class GradesTest {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+    @Test
+    public void testGradesMax() {
+        // TODO: Implement test cases
+    }
 
+    @Test
+    public void testGradesTotal() {
+        // TODO: Implement test cases
+    }
+
+    @Test
+    public void testGradesAverage() {
+        // TODO: Implement test cases
+    }
+
+    @Test
+    public void testCountFails() {
+        // TODO: Implement test cases
+    }
 }
+
