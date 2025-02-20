@@ -2,24 +2,45 @@ package griffith;
 
 public class Grades {
 
-    // Stub method for finding the maximum grade
+    // Find the maximum grade
     public int gradesMax(int[] grades) {
-        return 0; // Default return value
+        if (grades.length == 0) return 0; // Handle empty array case
+        
+        int max = grades[0];
+        for (int grade : grades) {
+            if (grade > max) {
+                max = grade;
+            }
+        }
+        return max;
     }
 
-    // Stub method for calculating total of grades
+    // Calculate the total of grades
     public int gradesTotal(int[] grades) {
-        return 0; // Default return value
+        int sum = 0;
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return sum;
     }
 
-    // Stub method for calculating the average of grades
+    // Calculate the average of grades
     public double gradesAverage(int[] grades) {
-        return 0.0; // Default return value
+        if (grades.length == 0) return 0; // Handle empty array case
+        
+        return (double) gradesTotal(grades) / grades.length;
     }
 
-    // Stub method for counting failing grades
+    // Count grades below minGrade
     public int countFails(int[] grades, int minGrade) {
-        return 0; // Default return value
+        int count = 0;
+        for (int grade : grades) {
+            if (grade < minGrade) {
+                count++;
+            }
+        }
+        return count;
     }
 }
+
 
