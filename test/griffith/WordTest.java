@@ -1,14 +1,22 @@
 package griffith;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-class WordTest {
+public class WordTest {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+    @Test
+    public void testContains() {
+        // TODO: Implement test cases
+    }
 
+    @Test
+    public void testLength() {
+        // TODO: Implement test cases
+    }
+
+    @Test
+    public void testNotNull() {
+        // TODO: Implement test cases
+    }
 }
