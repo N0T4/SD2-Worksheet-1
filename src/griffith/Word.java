@@ -3,23 +3,29 @@ package griffith;
 public class Word {
     private char[] letters;
 
-    // Constructor
+    // Constructor ensuring the array is never null
     public Word(char[] letters) {
-        this.letters = letters; // No logic yet
+        this.letters = (letters != null) ? letters : new char[0]; // Avoids null issues
     }
 
-    // Stub method for checking if a character exists
+    // Check if the character exists in the word
     public boolean contains(char symbol) {
-        return false; // Default return value
+        for (char letter : letters) {
+            if (letter == symbol) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    // Stub method for getting length
+    // Return the length of the word
     public int length() {
-        return 0; // Default return value
+        return letters.length;
     }
 
-    // Stub method for getting letters
+    // Return the character array
     public char[] getLetters() {
-        return null; // Default return value
+        return letters;
     }
 }
+
